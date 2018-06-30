@@ -44,18 +44,21 @@ class ViewController: UIViewController {
     
     @IBAction func addTen() {
          myTime += 10;
+        time.text =  String(myTime)
     }
     
     @IBAction func substractTen() {
          myTime -= 10;
+        time.text =  String(myTime)
     }
     
     @IBAction func reset() {
         myTime = 210
+        time.text =  String(myTime)
+        
     }
     
     
     
     
 }
-

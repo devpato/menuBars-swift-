@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         print(myTime)
     }
     
-    @IBAction func addTen(_ sender: Any) {
+    @IBAction func addTen() {
          myTime += 10;
     }
     
@@ -42,6 +42,9 @@ class ViewController: UIViewController {
          myTime -= 10;
     }
     
+    @IBAction func reset() {
+        myTime = 210
+    }
     
     
     

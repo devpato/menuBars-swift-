@@ -33,8 +33,13 @@ class ViewController: UIViewController {
     }
     
     @objc func processTimer(){
-        myTime-=1;
-        time.text =  String(myTime)
+        if myTime > 0 {
+            myTime-=1;
+            time.text =  String(myTime)
+        } else {
+            timer.invalidate()
+        }
+        
     }
     
     @IBAction func addTen() {

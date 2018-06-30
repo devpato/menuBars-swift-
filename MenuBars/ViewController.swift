@@ -25,13 +25,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func onPause(_ sender: Any) {
+    @IBAction func onPlay() {
+        timer.fire()
+    }
+    @IBAction func onPause() {
         timer.invalidate();
     }
     
     @objc func processTimer(){
         myTime-=1;
-        print(myTime)
+        time.text =  String(myTime)
     }
     
     @IBAction func addTen() {

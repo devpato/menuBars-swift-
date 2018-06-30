@@ -28,7 +28,11 @@
                                                 <action selector="camaraPress:" destination="BYZ-38-t0r" id="bvF-IY-f7t"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="nex-n9-Lzh"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="nex-n9-Lzh">
+                                            <connections>
+                                                <action selector="onPlay:" destination="BYZ-38-t0r" id="Vc6-jH-YJL"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -56,8 +60,8 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuB-EK-7s8">
-                                <rect key="frame" x="132" y="305" width="110" height="57"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="210" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuB-EK-7s8">
+                                <rect key="frame" x="149" y="305" width="77" height="57"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

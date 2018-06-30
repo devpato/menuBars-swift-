@@ -32,6 +32,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxr-NZ-vCA">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" systemItem="bookmarks" id="ctY-0W-JR3"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9X3-Qh-9Y6"/>
+                                    <barButtonItem title="Item" id="CKC-xg-rqa"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="83t-xi-6yR"/>
+                                    <barButtonItem title="Item" id="QN9-S1-SP7"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

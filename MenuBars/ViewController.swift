@@ -35,8 +35,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addTen(_ sender: Any) {
-        myTime += 10;
+         myTime += 10;
     }
+    
+    @IBAction func substractTen() {
+         myTime -= 10;
+    }
+    
+    
+    
     
     
 }

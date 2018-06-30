@@ -16,8 +16,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.processTimer), userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +24,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onPlay() {
-        timer.fire()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.processTimer), userInfo: nil, repeats: true)
     }
     @IBAction func onPause() {
         timer.invalidate();
@@ -48,8 +46,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func substractTen() {
-         myTime -= 10;
-        time.text =  String(myTime)
+        if myTime > 0 {
+            myTime -= 10;
+            time.text =  String(myTime)
+        }
+       
     }
     
     @IBAction func reset() {

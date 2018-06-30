@@ -36,11 +36,12 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" systemItem="bookmarks" id="ctY-0W-JR3"/>
+                                    <barButtonItem systemItem="reply" id="ctY-0W-JR3"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="9X3-Qh-9Y6"/>
-                                    <barButtonItem title="Item" id="CKC-xg-rqa"/>
+                                    <barButtonItem id="CKC-xg-rqa"/>
+                                    <barButtonItem systemItem="compose" id="WVL-mP-hAW"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="83t-xi-6yR"/>
-                                    <barButtonItem title="Item" id="QN9-S1-SP7"/>
+                                    <barButtonItem systemItem="trash" id="QN9-S1-SP7"/>
                                 </items>
                             </toolbar>
                         </subviews>

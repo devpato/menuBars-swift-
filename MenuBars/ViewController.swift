@@ -9,12 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-     var timer = Timer()
+    var timer = Timer()
+    @IBOutlet weak var time: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       
+        time.text = "210"
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.processTimer), userInfo: nil, repeats: true)
     }
 
@@ -23,13 +24,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func camaraPress(_ sender: Any) {
+    @IBAction func onPause(_ sender: Any) {
         timer.invalidate();
     }
     
     @objc func processTimer(){
         print("a second has passed")
     }
+    
     
 }
 

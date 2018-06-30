@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector(("processTimer")), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.processTimer), userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func camaraPress(_ sender: Any) {
-        print("camera press")
+        timer.invalidate();
     }
     
     @objc func processTimer(){

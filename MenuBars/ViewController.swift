@@ -23,11 +23,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func onPlay() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.processTimer), userInfo: nil, repeats: true)
+    @IBAction func onPlay(_ sender: Any) {
+      timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.processTimer), userInfo: nil, repeats: true)
     }
-    @IBAction func onPause() {
-        timer.invalidate();
+    
+    
+    @IBAction func onPause(_ sender: Any) {
+        timer.invalidate()
     }
     
     @objc func processTimer(){
@@ -40,12 +42,12 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func addTen() {
+    @IBAction func addTen(_ sender: Any) {
          myTime += 10;
         time.text =  String(myTime)
     }
     
-    @IBAction func substractTen() {
+    @IBAction func substractTen(_ sender: Any) {
         if myTime > 0 {
             myTime -= 10;
             time.text =  String(myTime)
@@ -53,7 +55,7 @@ class ViewController: UIViewController {
        
     }
     
-    @IBAction func reset() {
+    @IBAction func reset(_ sender: Any) {
         myTime = 210
         time.text =  String(myTime)
         

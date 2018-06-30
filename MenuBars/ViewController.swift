@@ -34,6 +34,10 @@ class ViewController: UIViewController {
         print(myTime)
     }
     
+    @IBAction func addTen(_ sender: Any) {
+        myTime += 10;
+    }
+    
     
 }
 

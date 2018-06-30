@@ -36,7 +36,11 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="-10" id="ctY-0W-JR3"/>
+                                    <barButtonItem title="-10" id="ctY-0W-JR3">
+                                        <connections>
+                                            <action selector="addTen:" destination="BYZ-38-t0r" id="mhI-R8-Vhx"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="9X3-Qh-9Y6"/>
                                     <barButtonItem id="CKC-xg-rqa"/>
                                     <barButtonItem title="Reset" id="WVL-mP-hAW"/>

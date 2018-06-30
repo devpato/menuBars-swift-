@@ -10,12 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     var timer = Timer()
+    var myTime : Int = 210
     @IBOutlet weak var time: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        time.text = "210"
+        
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.processTimer), userInfo: nil, repeats: true)
     }
 
@@ -29,7 +30,8 @@ class ViewController: UIViewController {
     }
     
     @objc func processTimer(){
-        print("a second has passed")
+        myTime-=1;
+        print(myTime)
     }
     
     
